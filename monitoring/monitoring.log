@@ -1,0 +1,145 @@
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:my-logger:type: success - message: Fetching users
+INFO:werkzeug:127.0.0.1 - - [26/Nov/2019 21:51:42] "GET /ping HTTP/1.1" 200 -
+INFO:my-logger:type: info - message: User is trying to fetch past 1 year data.
+INFO:werkzeug:127.0.0.1 - - [26/Nov/2019 21:51:43] "GET /ping HTTP/1.1" 200 -
+INFO:my-logger:type: info - message: User is trying to fetch past 1 year data.
+INFO:werkzeug:127.0.0.1 - - [26/Nov/2019 21:51:45] "GET /ping HTTP/1.1" 200 -
+INFO:my-logger:type: success - message: Fetching users
+INFO:werkzeug:127.0.0.1 - - [26/Nov/2019 21:51:46] "GET /ping HTTP/1.1" 200 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+ERROR:my-logger:type: error - message: Internal Server Error
+INFO:werkzeug:127.0.0.1 - - [26/Nov/2019 21:53:55] "GET /ping HTTP/1.1" 200 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:my-logger:type: success - message: Fetching users
+INFO:werkzeug:127.0.0.1 - - [26/Nov/2019 21:55:16] "GET /ping HTTP/1.1" 200 -
+ERROR:my-logger:type: error - message: Internal Server Error
+INFO:werkzeug:127.0.0.1 - - [26/Nov/2019 21:55:16] "GET /ping HTTP/1.1" 200 -
+ERROR:my-logger:type: error - message: Internal Server Error
+INFO:werkzeug:127.0.0.1 - - [26/Nov/2019 21:59:40] "GET /ping HTTP/1.1" 200 -
+INFO:my-logger:type: success - message: Fetching users
+INFO:werkzeug:127.0.0.1 - - [26/Nov/2019 21:59:43] "GET /ping HTTP/1.1" 200 -
+INFO:my-logger:type: success - message: Fetching users
+INFO:werkzeug:127.0.0.1 - - [26/Nov/2019 22:00:06] "GET /ping HTTP/1.1" 200 -
+INFO:my-logger:type: success - message: Fetching users
+INFO:werkzeug:127.0.0.1 - - [26/Nov/2019 22:00:07] "GET /ping HTTP/1.1" 200 -
+ERROR:my-logger:type: error - message: Internal Server Error
+INFO:werkzeug:127.0.0.1 - - [26/Nov/2019 22:01:49] "GET /ping HTTP/1.1" 200 -
+INFO:my-logger:type: success - message: Fetching users
+INFO:werkzeug:127.0.0.1 - - [26/Nov/2019 22:01:50] "GET /ping HTTP/1.1" 200 -
+INFO:my-logger:type: success - message: Fetching users
+INFO:werkzeug:127.0.0.1 - - [26/Nov/2019 22:02:57] "GET /ping HTTP/1.1" 200 -
+INFO:my-logger:type: success - message: Fetching users
+INFO:werkzeug:127.0.0.1 - - [26/Nov/2019 22:02:59] "GET /ping HTTP/1.1" 200 -
+ERROR:my-logger:type: error - message: Internal Server Error
+INFO:werkzeug:127.0.0.1 - - [26/Nov/2019 22:03:34] "GET /ping HTTP/1.1" 200 -
+INFO:my-logger:type: success - message: Fetching users
+INFO:werkzeug:127.0.0.1 - - [26/Nov/2019 22:03:35] "GET /ping HTTP/1.1" 200 -
+DEBUG:my-logger:type: debug - message: Infrastructure at peak load
+INFO:werkzeug:127.0.0.1 - - [26/Nov/2019 22:05:19] "GET /ping HTTP/1.1" 200 -
+INFO:my-logger:type: success - message: Fetching users
+INFO:werkzeug:127.0.0.1 - - [26/Nov/2019 22:05:21] "GET /ping HTTP/1.1" 200 -
+INFO:my-logger:type: success - message: Fetching users
+INFO:werkzeug:127.0.0.1 - - [26/Nov/2019 22:05:57] "GET /ping HTTP/1.1" 200 -
+INFO:my-logger:type: success - message: Fetching users
+INFO:werkzeug:127.0.0.1 - - [26/Nov/2019 22:05:57] "GET /ping HTTP/1.1" 200 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+ERROR:my-logger:{'message': 'type: error - message: Internal Server Error', 'type': 'error'}
+INFO:werkzeug:127.0.0.1 - - [26/Nov/2019 22:06:48] "GET /ping HTTP/1.1" 200 -
+INFO:my-logger:{'message': 'type: success - message: Fetching users', 'type': 'success'}
+INFO:werkzeug:127.0.0.1 - - [26/Nov/2019 22:06:50] "GET /ping HTTP/1.1" 200 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+DEBUG:my-logger:{'message': 'type: debug - message: Infrastructure at peak load', 'type': 'debug'}
+INFO:werkzeug:127.0.0.1 - - [26/Nov/2019 22:07:53] "GET /ping HTTP/1.1" 500 -
+INFO:my-logger:{'message': 'type: success - message: Fetching users', 'type': 'success'}
+INFO:werkzeug:127.0.0.1 - - [26/Nov/2019 22:07:54] "GET /ping HTTP/1.1" 500 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:my-logger:{'message': 'type: success - message: Fetching users', 'type': 'success'}
+INFO:werkzeug:127.0.0.1 - - [26/Nov/2019 22:08:21] "GET /ping HTTP/1.1" 500 -
+INFO:my-logger:{'message': 'type: success - message: Fetching users', 'type': 'success'}
+INFO:werkzeug:127.0.0.1 - - [26/Nov/2019 22:08:22] "GET /ping HTTP/1.1" 500 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:my-logger:{'message': 'type: info - message: User is trying to fetch past 1 year data.', 'type': 'info'}
+INFO:werkzeug:127.0.0.1 - - [26/Nov/2019 22:09:26] "GET /ping HTTP/1.1" 500 -
+INFO:my-logger:{'message': 'type: success - message: Fetching users', 'type': 'success'}
+INFO:werkzeug:127.0.0.1 - - [26/Nov/2019 22:09:27] "GET /ping HTTP/1.1" 500 -
+INFO:my-logger:{'message': 'type: info - message: User is trying to fetch past 1 year data.', 'type': 'info'}
+INFO:werkzeug:127.0.0.1 - - [26/Nov/2019 22:10:42] "GET /ping HTTP/1.1" 500 -
+INFO:my-logger:{'message': 'type: info - message: User is trying to fetch past 1 year data.', 'type': 'info'}
+INFO:werkzeug:127.0.0.1 - - [26/Nov/2019 22:10:44] "GET /ping HTTP/1.1" 500 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:my-logger:{'message': 'type: success - message: Fetching users', 'type': 'success'}
+INFO:werkzeug:127.0.0.1 - - [26/Nov/2019 22:11:44] "GET /ping HTTP/1.1" 500 -
+INFO:my-logger:{'message': 'type: success - message: Fetching users', 'type': 'success'}
+INFO:werkzeug:127.0.0.1 - - [26/Nov/2019 22:11:44] "GET /ping HTTP/1.1" 500 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:my-logger:{'message': 'type: success - message: Fetching users', 'type': 'success'}
+INFO:werkzeug:127.0.0.1 - - [26/Nov/2019 22:13:04] "GET /ping HTTP/1.1" 200 -
+INFO:my-logger:{'message': 'type: success - message: Fetching users', 'type': 'success'}
+INFO:werkzeug:127.0.0.1 - - [26/Nov/2019 22:13:08] "GET /ping HTTP/1.1" 200 -
+INFO:my-logger:{'message': 'type: success - message: Fetching users', 'type': 'success'}
+INFO:werkzeug:127.0.0.1 - - [26/Nov/2019 22:14:58] "GET /ping HTTP/1.1" 200 -
+INFO:my-logger:{'message': 'type: success - message: Fetching users', 'type': 'success'}
+INFO:werkzeug:127.0.0.1 - - [26/Nov/2019 22:14:59] "GET /ping HTTP/1.1" 200 -
+ERROR:my-logger:{'message': 'type: error - message: Internal Server Error', 'type': 'error'}
+INFO:werkzeug:127.0.0.1 - - [26/Nov/2019 22:15:23] "GET /ping HTTP/1.1" 200 -
+INFO:my-logger:{'message': 'type: success - message: Fetching users', 'type': 'success'}
+INFO:werkzeug:127.0.0.1 - - [26/Nov/2019 22:15:26] "GET /ping HTTP/1.1" 200 -
+DEBUG:my-logger:{'message': 'type: debug - message: Infrastructure at peak load', 'type': 'debug'}
+INFO:werkzeug:127.0.0.1 - - [26/Nov/2019 22:15:46] "GET /ping HTTP/1.1" 200 -
+INFO:my-logger:{'message': 'type: success - message: Fetching users', 'type': 'success'}
+INFO:werkzeug:127.0.0.1 - - [26/Nov/2019 22:15:50] "GET /ping HTTP/1.1" 200 -
+INFO:my-logger:{'message': 'type: success - message: Fetching users', 'type': 'success'}
+INFO:werkzeug:127.0.0.1 - - [26/Nov/2019 22:16:43] "GET /ping HTTP/1.1" 200 -
+INFO:my-logger:{'message': 'type: info - message: User is trying to fetch past 1 year data.', 'type': 'info'}
+INFO:werkzeug:127.0.0.1 - - [26/Nov/2019 22:16:44] "GET /ping HTTP/1.1" 200 -
+INFO:my-logger:{'message': 'type: success - message: Fetching users', 'type': 'success'}
+INFO:werkzeug:127.0.0.1 - - [26/Nov/2019 22:17:18] "GET /ping HTTP/1.1" 200 -
+INFO:my-logger:{'message': 'type: info - message: User is trying to fetch past 1 year data.', 'type': 'info'}
+INFO:werkzeug:127.0.0.1 - - [26/Nov/2019 22:17:18] "GET /ping HTTP/1.1" 200 -
+INFO:my-logger:{'message': 'type: success - message: Fetching users', 'type': 'success'}
+INFO:werkzeug:127.0.0.1 - - [26/Nov/2019 22:17:55] "GET /ping HTTP/1.1" 200 -
+INFO:my-logger:{'message': 'type: success - message: Fetching users', 'type': 'success'}
+INFO:werkzeug:127.0.0.1 - - [26/Nov/2019 22:17:56] "GET /ping HTTP/1.1" 200 -
+INFO:my-logger:{'message': 'type: success - message: Fetching users', 'type': 'success'}
+INFO:werkzeug:127.0.0.1 - - [26/Nov/2019 22:18:25] "GET /ping HTTP/1.1" 200 -
+INFO:my-logger:{'message': 'type: success - message: Fetching users', 'type': 'success'}
+INFO:werkzeug:127.0.0.1 - - [26/Nov/2019 22:18:28] "GET /ping HTTP/1.1" 200 -
+INFO:my-logger:{'message': 'type: success - message: Fetching users', 'type': 'success'}
+INFO:werkzeug:127.0.0.1 - - [26/Nov/2019 22:19:05] "GET /ping HTTP/1.1" 200 -
+INFO:my-logger:{'message': 'type: info - message: User is trying to fetch past 1 year data.', 'type': 'info'}
+INFO:werkzeug:127.0.0.1 - - [26/Nov/2019 22:19:06] "GET /ping HTTP/1.1" 200 -
+INFO:my-logger:{'message': 'type: info - message: User is trying to fetch past 1 year data.', 'type': 'info'}
+INFO:werkzeug:127.0.0.1 - - [26/Nov/2019 22:19:54] "GET /ping HTTP/1.1" 200 -
+INFO:my-logger:{'message': 'type: success - message: Fetching users', 'type': 'success'}
+INFO:werkzeug:127.0.0.1 - - [26/Nov/2019 22:19:55] "GET /ping HTTP/1.1" 200 -
+INFO:my-logger:{'message': 'type: success - message: Fetching users', 'type': 'success'}
+INFO:werkzeug:127.0.0.1 - - [26/Nov/2019 22:19:59] "GET /ping HTTP/1.1" 200 -
+INFO:my-logger:{'message': 'type: success - message: Fetching users', 'type': 'success'}
+INFO:werkzeug:127.0.0.1 - - [26/Nov/2019 22:20:00] "GET /ping HTTP/1.1" 200 -
+INFO:my-logger:{'message': 'type: success - message: Fetching users', 'type': 'success'}
+INFO:werkzeug:127.0.0.1 - - [26/Nov/2019 22:21:39] "GET /ping HTTP/1.1" 200 -
+INFO:my-logger:{'message': 'type: success - message: Fetching users', 'type': 'success'}
+INFO:werkzeug:127.0.0.1 - - [26/Nov/2019 22:21:43] "GET /ping HTTP/1.1" 200 -
+INFO:my-logger:{'message': 'type: success - message: Fetching users', 'type': 'success'}
+INFO:werkzeug:127.0.0.1 - - [26/Nov/2019 22:21:45] "GET /ping HTTP/1.1" 200 -
+INFO:my-logger:{'message': 'type: success - message: Fetching users', 'type': 'success'}
+INFO:werkzeug:127.0.0.1 - - [26/Nov/2019 22:21:48] "GET /ping HTTP/1.1" 200 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:my-logger:type: success - message: Fetching users
+INFO:werkzeug:127.0.0.1 - - [26/Nov/2019 22:22:05] "GET /ping HTTP/1.1" 200 -
+INFO:my-logger:type: success - message: Fetching users
+INFO:werkzeug:127.0.0.1 - - [26/Nov/2019 22:22:09] "GET /ping HTTP/1.1" 200 -
+INFO:my-logger:type: success - message: Fetching users
+INFO:werkzeug:127.0.0.1 - - [26/Nov/2019 22:22:10] "GET /ping HTTP/1.1" 200 -
+INFO:my-logger:type: info - message: User is trying to fetch past 1 year data.
+INFO:werkzeug:127.0.0.1 - - [26/Nov/2019 22:22:14] "GET /ping HTTP/1.1" 200 -
+ERROR:my-logger:type: error - message: Internal Server Error
+INFO:werkzeug:127.0.0.1 - - [26/Nov/2019 22:25:45] "GET /ping HTTP/1.1" 200 -
+INFO:my-logger:type: success - message: Fetching users
+INFO:werkzeug:127.0.0.1 - - [26/Nov/2019 22:25:45] "GET /ping HTTP/1.1" 200 -
+INFO:my-logger:type: success - message: Fetching users
+INFO:werkzeug:127.0.0.1 - - [26/Nov/2019 22:25:46] "GET /ping HTTP/1.1" 200 -
+ERROR:my-logger:type: error - message: Internal Server Error
+INFO:werkzeug:127.0.0.1 - - [26/Nov/2019 22:25:49] "GET /ping HTTP/1.1" 200 -

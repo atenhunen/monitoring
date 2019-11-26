@@ -4,6 +4,7 @@ import random
 import time
 import threading
 import sys
+import json
 
 # api-endpoint
 URL = "http://localhost:5000/ping"
@@ -17,9 +18,9 @@ def run_user(loop_max):
         time.sleep(wait)
         r = requests.get(url=URL)
         # extracting data in json format
-        data = r.json()
-        print data, "sleep", str(wait), "s"
+        data = json.loads(r._content.replace("'", '"'))
         loop = loop + 1
+        print data
 
 
 def main():

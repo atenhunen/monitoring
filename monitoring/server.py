@@ -1,9 +1,22 @@
 """Simple API emulator."""
 import random
 import time
+import logging
+import os
+import json
 
 from flask import Flask
+
 app = Flask(__name__)
+FORMAT = "%(asctime)-15s %(message)s"
+log = logging.getLogger("my-logger")
+logging.basicConfig(filename='monitoring.log', level=logging.DEBUG)
+
+handler = logging.FileHandler(
+    os.environ.get("LOGFILE", "/tmp/var/log/monitoring.log"))
+formatter = logging.Formatter(FORMAT)
+handler.setFormatter(formatter)
+log.addHandler(handler)
 
 
 @app.route('/')
@@ -19,13 +32,22 @@ def ping():
     time.sleep(wait)
     value = random.randint(0, 100)
     if 0 <= value <= 5:
-        return """{"type": "error", "message": "Internal Server Error"}"""
+        message = """type: error - message: Internal Server Error"""
+        ret = {"type": "error", "message": message}
+        log.error(message)
+        return str(ret)
     if 5 < value <= 85:
-        return """{"type": "success", "message": "Fetching users"}"""
+        message = """type: success - message: Fetching users"""
+        ret = {"type": "success", "message": message}
+        log.info(message)
+        return str(ret)
     if 85 < value <= 95:
-        return """{
-            "type": "info",
-            "message": "User is trying to fetch past 1 year data."}"""
+        message = """type: info - message: User is trying to fetch past 1 year data."""
+        ret = {"type": "info", "message": message}
+        log.info(message)
+        return str(ret)
     if 95 < value <= 100:
-        return """{"type": "debug",
-            "message": "Infrastructure at peak load"}"""
+        message = """type: debug - message: Infrastructure at peak load"""
+        ret = {"type": "debug", "message": message}
+        log.debug(message)
+        return str(ret)
