@@ -1,6 +1,7 @@
 # monitoring
+This is a small demo of API logging. Server.py emulates and API and logs requests. Simulator.py simulates users calling the API.
 
-Installation
+# Installation
 
 git clone https://github.com/lvthillo/docker-elk.git
 cd docker-elk/
@@ -11,12 +12,12 @@ sudo mkdir -p /tmp/var/log/
 brew install filebeat
 filebeat -e
 
-Running
+# Running
 
-# Terminal 1
+Terminal 1
 cd monitoring
 flask run
 
-# Terminal 2
+Terminal 2
 python monitoring/simulator.py 2 2
 First parameter is number of requests per user, second is number of users.
