@@ -19,5 +19,5 @@ cd monitoring
 flask run
 
 Terminal 2
-python monitoring/simulator.py <request-count> <user-count>
+python monitoring/simulator.py < request-count > < user-count >
 First parameter is number of requests per user, second is number of users.
