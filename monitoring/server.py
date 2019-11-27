@@ -19,12 +19,6 @@ handler.setFormatter(formatter)
 log.addHandler(handler)
 
 
-@app.route('/')
-def index():
-    """Index."""
-    return 'Server online'
-
-
 @app.route('/ping')
 def ping():
     """Ping."""

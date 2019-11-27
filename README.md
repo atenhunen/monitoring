@@ -9,6 +9,7 @@ docker run -d -p 8080:80 --log-driver gelf --log-opt gelf-address=udp://localhos
 sudo pip install Flask
 sudo mkdir -p /tmp/var/log/
 brew install filebeat
+filebeat -e
 
 Running
 
