@@ -3,7 +3,6 @@ import random
 import time
 import logging
 import os
-import json
 
 from flask import Flask
 
@@ -21,7 +20,11 @@ log.addHandler(handler)
 
 @app.route('/ping')
 def ping():
-    """Ping."""
+    """Ping endpoint.
+
+    This endpoint returns emulated server responses with
+    random success and messages. Success rate probablility is weighted.
+    """
     wait = float(random.randrange(0, 2000)) / 1000
     time.sleep(wait)
     value = random.randint(0, 100)
@@ -36,7 +39,8 @@ def ping():
         log.info(message)
         return str(ret)
     if 85 < value <= 95:
-        message = """type: info - message: User is trying to fetch past 1 year data."""
+        message = """type: info - message: User is trying to fetch past 1 year
+        data."""
         ret = {"type": "info", "message": message}
         log.info(message)
         return str(ret)
