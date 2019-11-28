@@ -29,23 +29,22 @@ def ping():
     time.sleep(wait)
     value = random.randint(0, 100)
     if 0 <= value <= 5:
-        message = """type: error - message: Internal Server Error"""
+        message = """Internal Server Error"""
         ret = {"type": "error", "message": message}
-        log.error(message)
+        log.error(str(ret))
         return str(ret)
     if 5 < value <= 85:
-        message = """type: success - message: Fetching users"""
+        message = """Fetching users"""
         ret = {"type": "success", "message": message}
-        log.info(message)
+        log.error(str(ret))
         return str(ret)
     if 85 < value <= 95:
-        message = """type: info - message: User is trying to fetch past 1 year
-        data."""
+        message = """User is trying to fetch past 1 year data."""
         ret = {"type": "info", "message": message}
-        log.info(message)
+        log.error(str(ret))
         return str(ret)
     if 95 < value <= 100:
-        message = """type: debug - message: Infrastructure at peak load"""
+        message = """Infrastructure at peak load"""
         ret = {"type": "debug", "message": message}
-        log.debug(message)
+        log.error(str(ret))
         return str(ret)
