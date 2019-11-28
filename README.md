@@ -19,7 +19,7 @@ sudo pip3 install gunicorn
 
 Terminal 1
 cd monitoring
-gunicorn --bind 0.0.0.0:5000 wsgi:app
+gunicorn --bind 0.0.0.0:5000 wsgi:app -w 8
 
 Terminal 2
 python monitoring/simulator.py < request-count > < user-count >
