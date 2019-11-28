@@ -26,7 +26,6 @@ def main():
     loop_max = 10
     if len(sys.argv) < 2:
         users = 1
-
     elif sys.argv[1] is not None:
         users = sys.argv[1]
     else:
