@@ -4,7 +4,6 @@ import random
 import time
 import threading
 import sys
-import json
 
 # api-endpoint
 URL = "http://localhost:5000/ping"
@@ -17,10 +16,9 @@ def run_user(loop_max):
         wait = float(random.randrange(0, 5000)) / 1000
         time.sleep(wait)
         r = requests.get(url=URL)
-        # extracting data in json format
-        data = json.loads(r._content.replace("'", '"'))
+        data = r._content
         loop = loop + 1
-        print data
+        print(data)
 
 
 def main():
@@ -37,7 +35,7 @@ def main():
         loop_max = sys.argv[2]
     threads = []
     for user in range(0, int(users)):
-        print "Starting new user", str(user)
+        print("Starting new user %s" % str(user))
         thread = threading.Thread(target=run_user, args=(int(loop_max), ))
         thread.start()
         threads.append(thread)
